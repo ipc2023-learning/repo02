@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-6
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 6 )
+
+GOAL:
+( vector(p0) = 21 )
+( vector(p1) = 0 )

@@ -1,0 +1,56 @@
+SPANNER-3
+
+OBJECTS:
+bob:man
+spanner1:spanner
+spanner2:spanner
+spanner3:spanner
+spanner4:spanner
+spanner5:spanner
+spanner6:spanner
+nut1:nut
+nut2:nut
+nut3:nut
+nut4:nut
+nut5:nut
+nut6:nut
+location1:location
+location2:location
+location3:location
+
+INIT:
+( atm(bob,location1) = 1 )
+( ats(spanner4,location1) = 1 )
+( ats(spanner5,location2) = 1 )
+( ats(spanner1,location3) = 1 )
+( ats(spanner2,location1) = 1 )
+( ats(spanner6,location3) = 1 )
+( ats(spanner3,location3) = 1 )
+( useable(spanner3) = 1 )
+( useable(spanner4) = 1 )
+( useable(spanner1) = 1 )
+( useable(spanner6) = 1 )
+( useable(spanner2) = 1 )
+( useable(spanner5) = 1 )
+( loose(nut1) = 1 )
+( loose(nut3) = 1 )
+( loose(nut5) = 1 )
+( loose(nut6) = 1 )
+( loose(nut4) = 1 )
+( loose(nut2) = 1 )
+( atn(nut6,location3) = 1 )
+( atn(nut2,location3) = 1 )
+( atn(nut4,location3) = 1 )
+( atn(nut3,location3) = 1 )
+( atn(nut5,location3) = 1 )
+( atn(nut1,location3) = 1 )
+( link(location1,location2) = 1 )
+( link(location2,location3) = 1 )
+
+GOAL:
+( tightened(nut1) = 1 )
+( tightened(nut2) = 1 )
+( tightened(nut3) = 1 )
+( tightened(nut4) = 1 )
+( tightened(nut5) = 1 )
+( tightened(nut6) = 1 )

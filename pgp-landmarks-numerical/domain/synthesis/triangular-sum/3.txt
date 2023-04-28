@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-4
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 4 )
+
+GOAL:
+( vector(p0) = 10 )
+( vector(p1) = 0 )

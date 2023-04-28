@@ -1,0 +1,23 @@
+ARC
+
+STATE DESCRIPTOR:
+object:var_type
+output_pixels:var_type
+color:var_type
+painted_output(output_pixels,color):pred_type
+color_usable(color):pred_type
+o1:object
+o1:output_pixels
+o2:output_pixels
+c1:color
+c2:color
+c3:color
+
+ACTION: paint(c:color,c2:color,y:output_pixels)
+TYPE: memory
+PRECONDITIONS:
+( color_usable(c2) = 1 )
+( painted_output(y,c) = 1 )
+EFFECTS:
+( painted_output(y,c) = 0 )
+( painted_output(y,c2) = 1 )

@@ -1,0 +1,18 @@
+BAKING-1
+
+OBJECTS:
+e1:egg
+f1:flour
+c1:cake
+s1:soap
+p1:pan
+o1:oven
+
+INIT:
+( eggconsumed(e1) = 0 )
+( panisclean(p1) = 1 )
+( soapconsumed(s1) = 0 )
+
+GOAL:
+( panisclean(p1) = 1 )
+( baked(c1) = 1 )

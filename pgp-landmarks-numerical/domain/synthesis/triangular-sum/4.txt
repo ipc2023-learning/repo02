@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-5
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 5 )
+
+GOAL:
+( vector(p0) = 15 )
+( vector(p1) = 0 )

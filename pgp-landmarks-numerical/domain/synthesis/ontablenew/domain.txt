@@ -1,0 +1,58 @@
+BLOCKS
+
+STATE DESCRIPTOR:
+object:var_type
+on(object,object):pred_type
+ontable(object):pred_type
+clear(object):pred_type
+handempty():pred_type
+holding(object):pred_type
+o1:object
+o2:object
+
+ACTION: pick-up(x:object)
+TYPE: memory
+PRECONDITIONS:
+( clear(x) = 1 )
+( ontable(x) = 1 )
+( handempty() = 1 )
+EFFECTS:
+( ontable(x) = 0 )
+( clear(x) = 0 )
+( handempty() = 0 )
+( holding(x) = 1 )
+
+ACTION: put-down(x:object)
+TYPE: memory
+PRECONDITIONS:
+( holding(x) = 1 )
+EFFECTS:
+( holding(x) = 0 )
+( clear(x) = 1 )
+( handempty() = 1 )
+( ontable(x) = 1 )
+
+ACTION: stack(x:object,y:object)
+TYPE: memory
+PRECONDITIONS:
+( holding(x) = 1 )
+( clear(y) = 1 )
+EFFECTS:
+( holding(x) = 0 )
+( clear(y) = 0 )
+( clear(x) = 1 )
+( handempty() = 1 )
+( on(x,y) = 1 )
+
+ACTION: unstack(x:object,y:object)
+TYPE: memory
+PRECONDITIONS:
+( on(x,y) = 1 )
+( clear(x) = 1 )
+( handempty() = 1 )
+EFFECTS:
+( holding(x) = 1 )
+( clear(y) = 1 )
+( clear(x) = 0 )
+( handempty() = 0 )
+( on(x,y) = 0 )

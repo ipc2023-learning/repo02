@@ -1,0 +1,41 @@
+LOCK
+
+STATE DESCRIPTOR:
+object:var_type
+at-agent(object):pred_type
+at-key(object):pred_type
+at-lock(object):pred_type
+has-agent-key():pred_type
+adjacent(object,object):pred_type
+unlocked():pred_type
+o1:object
+o2:object
+
+ACTION: move(x:object,y:object)
+TYPE: memory
+PRECONDITIONS:
+( adjacent(x,y) = 1 )
+( at-agent(x) = 1 )
+( at-agent(y) = 0 )
+EFFECTS:
+( at-agent(y) = 1 )
+( at-agent(x) = 0 )
+
+ACTION: pickup(x:object)
+TYPE: memory
+PRECONDITIONS:
+( at-agent(x) = 1 )
+( at-key(x) = 1 )
+EFFECTS:
+( has-agent-key() = 1 )
+( at-key(x) = 0 )
+
+
+ACTION: open(x:object)
+TYPE: memory
+PRECONDITIONS:
+( at-agent(x) = 1 )
+( at-lock(x) = 1 )
+( has-agent-key() = 1 )
+EFFECTS:
+( unlocked() = 1 )

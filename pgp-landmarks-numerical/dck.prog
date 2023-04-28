@@ -1,0 +1,6 @@
+0. cmp(vector(a),vector(b))
+1. goto(3,!(( zf = 0 )( cf = 0 )))
+2. set(b,a)
+3. inc(a)
+4. goto(0,!(( zf = 1 )( cf = 0 )))
+5. end

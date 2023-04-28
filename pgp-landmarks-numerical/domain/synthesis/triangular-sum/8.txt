@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-9
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 9 )
+
+GOAL:
+( vector(p0) = 45 )
+( vector(p1) = 0 )

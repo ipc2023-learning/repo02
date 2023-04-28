@@ -1,0 +1,16 @@
+SELECT-4
+
+OBJECTS:
+p0:object
+p1:object
+p2:object
+p3:object
+
+INIT:
+( vector(p0) = 71 )
+( vector(p1) = 56 )
+( vector(p2) = 14 )
+( vector(p3) = 46 )
+
+GOAL:
+( b = 2 )

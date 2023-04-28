@@ -1,0 +1,75 @@
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 7 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 8 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 9 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 7 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 8 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 9 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 8 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 7 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 9 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 7 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 8 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 9 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 7 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 8 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded
+/usr/bin/time -f "time result
+cmd:%C
+real %es
+memory:%MKB 
+" $@ 2>> experiments/fibo_h5_h1.out ./main.bin BFS 9 1 domain/synthesis/fibo/ h5 h1 Memory budget exceeded

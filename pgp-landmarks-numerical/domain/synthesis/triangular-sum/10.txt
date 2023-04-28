@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-11
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 11 )
+
+GOAL:
+( vector(p0) = 66 )
+( vector(p1) = 0 )

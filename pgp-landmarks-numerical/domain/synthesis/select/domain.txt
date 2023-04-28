@@ -1,0 +1,7 @@
+SELECT
+
+STATE DESCRIPTOR:
+object:var_type
+vector(object):pred_type
+a:object
+b:object

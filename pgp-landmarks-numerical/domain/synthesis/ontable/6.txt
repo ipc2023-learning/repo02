@@ -1,0 +1,48 @@
+BLOCKS-3
+
+OBJECTS:
+b1:object
+b2:object
+b3:object
+b4:object
+b5:object
+b6:object
+b7:object
+b8:object
+b9:object
+b10:object
+b11:object
+b12:object
+
+INIT:
+( handempty() = 1 )
+( clear(b8) = 1 )
+( clear(b4) = 1 )
+( clear(b5) = 1 )
+( clear(b12) = 1 )
+( on(b9,b2) = 1 )
+( on(b11,b6) = 1 )
+( on(b4,b11) = 1 )
+( on(b1,b9) = 1 )
+( on(b8,b10) = 1 )
+( on(b2,b7) = 1 )
+( on(b6,b3) = 1 )
+( on(b5,b1) = 1 )
+( ontable(b7) = 1 )
+( ontable(b12) = 1 )
+( ontable(b10) = 1 )
+( ontable(b3) = 1 )
+
+GOAL:
+( ontable(b1) = 1 )
+( ontable(b2) = 1 )
+( ontable(b3) = 1 )
+( ontable(b4) = 1 )
+( ontable(b5) = 1 )
+( ontable(b6) = 1 )
+( ontable(b7) = 1 )
+( ontable(b8) = 1 )
+( ontable(b9) = 1 )
+( ontable(b10) = 1 )
+( ontable(b11) = 1 )
+( ontable(b12) = 1 )

@@ -1,0 +1,152 @@
+SPANNER-9
+
+OBJECTS:
+bob:man
+spanner1:spanner
+spanner2:spanner
+spanner3:spanner
+spanner4:spanner
+spanner5:spanner
+spanner6:spanner
+spanner7:spanner
+spanner8:spanner
+spanner9:spanner
+spanner10:spanner
+spanner11:spanner
+spanner12:spanner
+spanner13:spanner
+spanner14:spanner
+spanner15:spanner
+spanner16:spanner
+spanner17:spanner
+spanner18:spanner
+nut1:nut
+nut2:nut
+nut3:nut
+nut4:nut
+nut5:nut
+nut6:nut
+nut7:nut
+nut8:nut
+nut9:nut
+nut10:nut
+nut11:nut
+nut12:nut
+nut13:nut
+nut14:nut
+nut15:nut
+nut16:nut
+nut17:nut
+nut18:nut
+location1:location
+location2:location
+location3:location
+location4:location
+location5:location
+location6:location
+location7:location
+location8:location
+location9:location
+
+INIT:
+( atm(bob,location1) = 1 )
+( ats(spanner4,location4) = 1 )
+( ats(spanner9,location1) = 1 )
+( ats(spanner8,location6) = 1 )
+( ats(spanner7,location4) = 1 )
+( ats(spanner11,location2) = 1 )
+( ats(spanner18,location2) = 1 )
+( ats(spanner15,location6) = 1 )
+( ats(spanner14,location7) = 1 )
+( ats(spanner16,location8) = 1 )
+( ats(spanner10,location9) = 1 )
+( ats(spanner17,location4) = 1 )
+( ats(spanner5,location3) = 1 )
+( ats(spanner13,location8) = 1 )
+( ats(spanner2,location5) = 1 )
+( ats(spanner1,location2) = 1 )
+( ats(spanner3,location1) = 1 )
+( ats(spanner12,location8) = 1 )
+( ats(spanner6,location6) = 1 )
+( useable(spanner8) = 1 )
+( useable(spanner10) = 1 )
+( useable(spanner17) = 1 )
+( useable(spanner12) = 1 )
+( useable(spanner3) = 1 )
+( useable(spanner14) = 1 )
+( useable(spanner11) = 1 )
+( useable(spanner16) = 1 )
+( useable(spanner18) = 1 )
+( useable(spanner13) = 1 )
+( useable(spanner7) = 1 )
+( useable(spanner4) = 1 )
+( useable(spanner1) = 1 )
+( useable(spanner6) = 1 )
+( useable(spanner9) = 1 )
+( useable(spanner15) = 1 )
+( useable(spanner2) = 1 )
+( useable(spanner5) = 1 )
+( loose(nut1) = 1 )
+( loose(nut3) = 1 )
+( loose(nut5) = 1 )
+( loose(nut7) = 1 )
+( loose(nut9) = 1 )
+( loose(nut14) = 1 )
+( loose(nut18) = 1 )
+( loose(nut16) = 1 )
+( loose(nut6) = 1 )
+( loose(nut10) = 1 )
+( loose(nut13) = 1 )
+( loose(nut17) = 1 )
+( loose(nut4) = 1 )
+( loose(nut12) = 1 )
+( loose(nut15) = 1 )
+( loose(nut11) = 1 )
+( loose(nut2) = 1 )
+( loose(nut8) = 1 )
+( atn(nut6,location9) = 1 )
+( atn(nut13,location9) = 1 )
+( atn(nut11,location9) = 1 )
+( atn(nut17,location9) = 1 )
+( atn(nut14,location9) = 1 )
+( atn(nut2,location9) = 1 )
+( atn(nut4,location9) = 1 )
+( atn(nut3,location9) = 1 )
+( atn(nut8,location9) = 1 )
+( atn(nut10,location9) = 1 )
+( atn(nut12,location9) = 1 )
+( atn(nut15,location9) = 1 )
+( atn(nut5,location9) = 1 )
+( atn(nut7,location9) = 1 )
+( atn(nut16,location9) = 1 )
+( atn(nut18,location9) = 1 )
+( atn(nut1,location9) = 1 )
+( atn(nut9,location9) = 1 )
+( link(location1,location2) = 1 )
+( link(location5,location6) = 1 )
+( link(location2,location3) = 1 )
+( link(location7,location8) = 1 )
+( link(location8,location9) = 1 )
+( link(location3,location4) = 1 )
+( link(location4,location5) = 1 )
+( link(location6,location7) = 1 )
+
+GOAL:
+( tightened(nut1) = 1 )
+( tightened(nut2) = 1 )
+( tightened(nut3) = 1 )
+( tightened(nut4) = 1 )
+( tightened(nut5) = 1 )
+( tightened(nut6) = 1 )
+( tightened(nut7) = 1 )
+( tightened(nut8) = 1 )
+( tightened(nut9) = 1 )
+( tightened(nut10) = 1 )
+( tightened(nut11) = 1 )
+( tightened(nut12) = 1 )
+( tightened(nut13) = 1 )
+( tightened(nut14) = 1 )
+( tightened(nut15) = 1 )
+( tightened(nut16) = 1 )
+( tightened(nut17) = 1 )
+( tightened(nut18) = 1 )

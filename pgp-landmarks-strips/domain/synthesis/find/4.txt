@@ -1,0 +1,21 @@
+FIND-5
+
+OBJECTS:
+a:counter
+p0:object
+p1:object
+p2:object
+p3:object
+p4:object
+
+INIT:
+( target = 2 )
+( counter-vector(a) = 0 )
+( vector(p0) = 1 )
+( vector(p1) = 0 )
+( vector(p2) = 0 )
+( vector(p3) = 0 )
+( vector(p4) = 0 )
+
+GOAL:
+( counter-vector(a) = 4 )

@@ -1,0 +1,13 @@
+REVERSE-2
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 18 )
+( vector(p1) = 7 )
+
+GOAL:
+( vector(p0) = 7 )
+( vector(p1) = 18 )

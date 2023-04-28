@@ -1,0 +1,15 @@
+BLOCKS-1
+
+OBJECTS:
+b1:object
+b2:object
+
+INIT:
+( handempty() = 1 )
+( clear(b1) = 1 )
+( on(b1,b2) = 1 )
+( ontable(b2) = 1 )
+
+GOAL:
+( ontable(b1) = 1 )
+( ontable(b2) = 1 )

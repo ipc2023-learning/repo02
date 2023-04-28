@@ -1,0 +1,30 @@
+LOCK-3
+
+OBJECTS:
+c1:object
+c2:object
+c3:object
+c4:object
+c5:object
+c6:object
+c7:object
+
+INIT:
+( at-key(c7) = 1 )
+( at-lock(c1) = 1 )
+( at-agent(c2) = 1 )
+( adjacent(c2,c1) = 1 )
+( adjacent(c4,c3) = 1 )
+( adjacent(c2,c3) = 1 )
+( adjacent(c3,c2) = 1 )
+( adjacent(c7,c6) = 1 )
+( adjacent(c4,c5) = 1 )
+( adjacent(c6,c5) = 1 )
+( adjacent(c5,c4) = 1 )
+( adjacent(c3,c4) = 1 )
+( adjacent(c5,c6) = 1 )
+( adjacent(c6,c7) = 1 )
+( adjacent(c1,c2) = 1 )
+
+GOAL:
+( unlocked() = 1 )

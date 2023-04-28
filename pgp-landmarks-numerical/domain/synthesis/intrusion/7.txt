@@ -1,0 +1,22 @@
+INTRUSION-7
+
+OBJECTS:
+h1:host
+h2:host
+h3:host
+h4:host
+h5:host
+h6:host
+h7:host
+
+INIT:
+( dummy() = 1 )
+
+GOAL:
+( data-stolen-from(h1) = 1 )
+( data-stolen-from(h2) = 1 )
+( data-stolen-from(h3) = 1 )
+( data-stolen-from(h4) = 1 )
+( data-stolen-from(h5) = 1 )
+( data-stolen-from(h6) = 1 )
+( data-stolen-from(h7) = 1 )

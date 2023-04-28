@@ -1,0 +1,51 @@
+SPANNER
+
+STATE DESCRIPTOR:
+location:var_type
+man:var_type
+nut:var_type
+spanner:var_type
+atm(man,location):pred_type
+ats(spanner,location):pred_type
+atn(nut,location):pred_type
+carrying(man,spanner):pred_type
+useable(spanner):pred_type
+link(location,location):pred_type
+tightened(nut):pred_type
+loose(nut):pred_type
+ptr-location1:location
+ptr-location2:location
+ptr-man1:man
+ptr-nut1:nut
+ptr-spanner1:spanner
+
+ACTION: walk(start:location,end:location,m:man)
+TYPE: memory
+PRECONDITIONS:
+( atm(m,start) = 1 )
+( link(start,end) = 1 )
+EFFECTS:
+( atm(m,start) = 0 )
+( atm(m,end) = 1 )
+
+ACTION: pickup_spanner(l:location,s:spanner,m:man)
+TYPE: memory
+PRECONDITIONS:
+( atm(m,l) = 1 )
+( ats(s,l) = 1 )
+EFFECTS:
+( ats(s,l) = 0 )
+( carrying(m,s) = 1 )
+
+ACTION: tighten_nut(l:location,s:spanner,m:man,n:nut)
+TYPE: memory
+PRECONDITIONS:
+( atm(m,l) = 1 )
+( atn(n,l) = 1 )
+( carrying(m,s) = 1 )
+( useable(s) = 1 )
+( loose(n) = 1 )
+EFFECTS:
+( loose(n) = 0 )
+( useable(s) = 0 )
+( tightened(n) = 1 )

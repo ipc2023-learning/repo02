@@ -1,0 +1,13 @@
+CORRIDOR-11
+
+OBJECTS:
+pos:object
+goal-pos:object
+
+INIT:
+( vector(pos) = 1 )
+( vector(goal-pos) = 10 )
+
+GOAL:
+( vector(pos) = 10 )
+( vector(goal-pos) = 10 )

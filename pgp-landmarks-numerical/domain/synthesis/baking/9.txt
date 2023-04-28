@@ -1,0 +1,56 @@
+BAKING-9
+
+OBJECTS:
+e1:egg
+e2:egg
+e3:egg
+e4:egg
+e5:egg
+e6:egg
+e7:egg
+e8:egg
+e9:egg
+f1:flour
+f2:flour
+f3:flour
+f4:flour
+f5:flour
+f6:flour
+f7:flour
+f8:flour
+f9:flour
+c1:cake
+c2:cake
+c3:cake
+c4:cake
+c5:cake
+c6:cake
+c7:cake
+c8:cake
+c9:cake
+s2:soap
+s3:soap
+s4:soap
+s5:soap
+s6:soap
+s7:soap
+s8:soap
+s9:soap
+s1:soap
+p1:pan
+o1:oven
+
+INIT:
+( panisclean(p1) = 1 )
+
+GOAL:
+( panisclean(p1) = 1 )
+( baked(c1) = 1 )
+( baked(c2) = 1 )
+( baked(c3) = 1 )
+( baked(c4) = 1 )
+( baked(c5) = 1 )
+( baked(c6) = 1 )
+( baked(c7) = 1 )
+( baked(c8) = 1 )
+( baked(c9) = 1 )

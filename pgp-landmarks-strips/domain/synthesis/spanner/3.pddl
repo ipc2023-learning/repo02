@@ -1,0 +1,46 @@
+(define (problem SPANNER-3)
+ (:domain SPANNER)
+ (:objects 
+     bob - man
+     spanner1 spanner2 spanner3 spanner4 spanner5 spanner6 - spanner
+     nut1 nut2 nut3 nut4 nut5 nut6 - nut
+     location1 location2 location3 - location
+)
+ (:init 
+    (atm bob location1)
+    (ats spanner1 location3)
+    (useable spanner1)
+    (ats spanner2 location1)
+    (useable spanner2)
+    (ats spanner3 location3)
+    (useable spanner3)
+    (ats spanner4 location1)
+    (useable spanner4)
+    (ats spanner5 location2)
+    (useable spanner5)
+    (ats spanner6 location3)
+    (useable spanner6)
+    (loose nut1)
+    (atn nut1 location3)
+    (loose nut2)
+    (atn nut2 location3)
+    (loose nut3)
+    (atn nut3 location3)
+    (loose nut4)
+    (atn nut4 location3)
+    (loose nut5)
+    (atn nut5 location3)
+    (loose nut6)
+    (atn nut6 location3)
+    (link location1 location2)
+    (link location2 location3)
+)
+ (:goal
+  (and
+   (tightened nut1)
+   (tightened nut2)
+   (tightened nut3)
+   (tightened nut4)
+   (tightened nut5)
+   (tightened nut6)
+)))

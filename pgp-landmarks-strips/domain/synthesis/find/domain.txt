@@ -1,0 +1,17 @@
+FIND
+
+STATE DESCRIPTOR:
+object:var_type
+counter:var_type
+vector(object):pred_type
+counter-vector(counter):pred_type
+index:object
+target:object
+accumulator:counter
+
+ACTION: accumulate(c:counter)
+TYPE: memory
+PRECONDITIONS:
+( counter-vector(c) + 1 )
+EFFECTS:
+( counter-vector(c) += 1 )

@@ -1,0 +1,15 @@
+VISITALL
+
+STATE DESCRIPTOR:
+row:var_type
+column:var_type
+cell(row,column):pred_type
+i:row
+j:column
+
+ACTION: visit(x:row,y:column)
+TYPE: memory
+PRECONDITIONS:
+( cell(x,y) = 0 )
+EFFECTS:
+( cell(x,y) = 1 )

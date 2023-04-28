@@ -1,0 +1,77 @@
+VISITALL-2
+
+OBJECTS:
+r0:row
+c0:column
+r1:row
+c1:column
+r2:row
+c2:column
+r3:row
+c3:column
+r4:row
+c4:column
+
+
+INIT:
+( cell(r0,c0) = 0 )
+( cell(r0,c1) = 0 )
+( cell(r0,c2) = 1 )
+( cell(r0,c3) = 0 )
+( cell(r0,c4) = 0 )
+
+( cell(r1,c0) = 1 )
+( cell(r1,c1) = 0 )
+( cell(r1,c2) = 0 )
+( cell(r1,c3) = 0 )
+( cell(r1,c4) = 0 )
+
+( cell(r2,c0) = 1 )
+( cell(r2,c1) = 0 )
+( cell(r2,c2) = 0 )
+( cell(r2,c3) = 0 )
+( cell(r2,c4) = 0 )
+
+( cell(r3,c0) = 0 )
+( cell(r3,c1) = 0 )
+( cell(r3,c2) = 0 )
+( cell(r3,c3) = 1 )
+( cell(r3,c4) = 0 )
+
+( cell(r4,c0) = 0 )
+( cell(r4,c1) = 1 )
+( cell(r4,c2) = 0 )
+( cell(r4,c3) = 0 )
+( cell(r4,c4) = 1 )
+
+
+GOAL:
+( cell(r0,c0) = 0 )
+( cell(r0,c1) = 0 )
+( cell(r0,c2) = 2 )
+( cell(r0,c3) = 0 )
+( cell(r0,c4) = 0 )
+
+( cell(r1,c0) = 2 )
+( cell(r1,c1) = 0 )
+( cell(r1,c2) = 0 )
+( cell(r1,c3) = 0 )
+( cell(r1,c4) = 0 )
+
+( cell(r2,c0) = 2 )
+( cell(r2,c1) = 0 )
+( cell(r2,c2) = 0 )
+( cell(r2,c3) = 0 )
+( cell(r2,c4) = 0 )
+
+( cell(r3,c0) = 0 )
+( cell(r3,c1) = 0 )
+( cell(r3,c2) = 0 )
+( cell(r3,c3) = 2 )
+( cell(r3,c4) = 0 )
+
+( cell(r4,c0) = 0 )
+( cell(r4,c1) = 2 )
+( cell(r4,c2) = 0 )
+( cell(r4,c3) = 0 )
+( cell(r4,c4) = 2 )

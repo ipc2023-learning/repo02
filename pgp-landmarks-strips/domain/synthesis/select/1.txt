@@ -1,0 +1,12 @@
+SELECT-2
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 18 )
+( vector(p1) = 7 )
+
+GOAL:
+( b = 1 )

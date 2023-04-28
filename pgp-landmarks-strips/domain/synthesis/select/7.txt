@@ -1,0 +1,24 @@
+SELECT-8
+
+OBJECTS:
+p0:object
+p1:object
+p2:object
+p3:object
+p4:object
+p5:object
+p6:object
+p7:object
+
+INIT:
+( vector(p0) = 89 )
+( vector(p1) = 37 )
+( vector(p2) = 88 )
+( vector(p3) = 40 )
+( vector(p4) = 86 )
+( vector(p5) = 42 )
+( vector(p6) = 88 )
+( vector(p7) = 22 )
+
+GOAL:
+( b = 7 )

@@ -1,0 +1,44 @@
+GRIPPER
+
+STATE DESCRIPTOR:
+room:var_type
+ball:var_type
+gripper:var_type
+at-robby(room):pred_type
+at(ball,room):pred_type
+free(gripper):pred_type
+carry(ball,gripper):pred_type
+adjacent(room,room):pred_type
+r1:room
+r2:room
+b1:ball
+g1:gripper
+
+ACTION: move(r1:room,r2:room)
+TYPE: memory
+PRECONDITIONS:
+( at-robby(r1) = 1 )
+( adjacent(r1,r2) = 1 )
+EFFECTS:
+( at-robby(r1) = 0 )
+( at-robby(r2) = 1 )
+
+ACTION: pick(b:ball,r:room,g:gripper)
+TYPE: memory
+PRECONDITIONS:
+( at(b,r) = 1 )
+( at-robby(r) = 1 )
+( free(g) = 1 )
+EFFECTS:
+( carry(b,g) = 1 )
+( at(b,r) = 0 )
+( free(g) = 0 )
+ACTION: drop(b:ball,r:room,g:gripper)
+TYPE: memory
+PRECONDITIONS:
+( carry(b,g) = 1 )
+( at-robby(r) = 1 )
+EFFECTS:
+( carry(b,g) = 0 )
+( at(b,r) = 1 )
+( free(g) = 1 )

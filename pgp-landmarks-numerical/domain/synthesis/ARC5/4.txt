@@ -1,0 +1,131 @@
+VISITALL-3
+
+OBJECTS:
+r0:row
+c0:column
+r1:row
+c1:column
+r2:row
+c2:column
+r3:row
+c3:column
+r4:row
+c4:column
+r5:row
+c5:column
+r6:row
+c6:column
+
+INIT:
+( cell(r0,c0) = 0 )
+( cell(r0,c1) = 0 )
+( cell(r0,c2) = 0 )
+( cell(r0,c3) = 0 )
+( cell(r0,c4) = 0 )
+( cell(r0,c5) = 0 )
+( cell(r0,c6) = 0 )
+
+( cell(r1,c0) = 0 )
+( cell(r1,c1) = 0 )
+( cell(r1,c2) = 0 )
+( cell(r1,c3) = 0 )
+( cell(r1,c4) = 0 )
+( cell(r1,c5) = 0 )
+( cell(r1,c6) = 0 )
+
+( cell(r2,c0) = 0 )
+( cell(r2,c1) = 0 )
+( cell(r2,c2) = 0 )
+( cell(r2,c3) = 0 )
+( cell(r2,c4) = 0 )
+( cell(r2,c5) = 0 )
+( cell(r2,c6) = 0 )
+
+( cell(r3,c0) = 0 )
+( cell(r3,c1) = 0 )
+( cell(r3,c2) = 0 )
+( cell(r3,c3) = 0 )
+( cell(r3,c4) = 0 )
+( cell(r3,c5) = 0 )
+( cell(r3,c6) = 0 )
+
+( cell(r4,c0) = 0 )
+( cell(r4,c1) = 0 )
+( cell(r4,c2) = 0 )
+( cell(r4,c3) = 0 )
+( cell(r4,c4) = 0 )
+( cell(r4,c5) = 0 )
+( cell(r4,c6) = 0  )
+
+( cell(r5,c0) = 0 )
+( cell(r5,c1) = 1 )
+( cell(r5,c2) = 1 )
+( cell(r5,c3) = 1 )
+( cell(r5,c4) = 1 )
+( cell(r5,c5) = 1 )
+( cell(r5,c6) = 0 )
+
+( cell(r6,c0) = 0 )
+( cell(r6,c1) = 0 )
+( cell(r6,c2) = 0 )
+( cell(r6,c3) = 0 )
+( cell(r6,c4) = 0 )
+( cell(r6,c5) = 0 )
+( cell(r6,c6) = 0 )
+
+GOAL:
+( cell(r0,c0) = 0 )
+( cell(r0,c1) = 0 )
+( cell(r0,c2) = 0 )
+( cell(r0,c3) = 0 )
+( cell(r0,c4) = 0 )
+( cell(r0,c5) = 0 )
+( cell(r0,c6) = 0 )
+
+( cell(r1,c0) = 0 )
+( cell(r1,c1) = 0 )
+( cell(r1,c2) = 0 )
+( cell(r1,c3) = 0 )
+( cell(r1,c4) = 0 )
+( cell(r1,c5) = 0 )
+( cell(r1,c6) = 0 )
+
+( cell(r2,c0) = 0 )
+( cell(r2,c1) = 0 )
+( cell(r2,c2) = 0 )
+( cell(r2,c3) = 0 )
+( cell(r2,c4) = 0 )
+( cell(r2,c5) = 0 )
+( cell(r2,c6) = 0 )
+
+( cell(r3,c0) = 0 )
+( cell(r3,c1) = 0 )
+( cell(r3,c2) = 0 )
+( cell(r3,c3) = 0 )
+( cell(r3,c4) = 0 )
+( cell(r3,c5) = 0 )
+( cell(r3,c6) = 0 )
+
+( cell(r4,c0) = 0 )
+( cell(r4,c1) = 0 )
+( cell(r4,c2) = 0 )
+( cell(r4,c3) = 0 )
+( cell(r4,c4) = 0 )
+( cell(r4,c5) = 0 )
+( cell(r4,c6) = 0 )
+
+( cell(r5,c0) = 0 )
+( cell(r5,c1) = 1 )
+( cell(r5,c2) = 1 )
+( cell(r5,c3) = 1 )
+( cell(r5,c4) = 1 )
+( cell(r5,c5) = 1 )
+( cell(r5,c6) = 0 )
+
+( cell(r6,c0) = 0 )
+( cell(r6,c1) = 0 )
+( cell(r6,c2) = 0 )
+( cell(r6,c3) = 0 )
+( cell(r6,c4) = 0 )
+( cell(r6,c5) = 0 )
+( cell(r6,c6) = 0 )

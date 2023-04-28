@@ -1,0 +1,23 @@
+CORRIDOR-5
+
+OBJECTS:
+l1:location
+l2:location
+l3:location
+l4:location
+l5:location
+
+INIT:
+( at(l1) = 1 )
+( goal-at(l5) = 1 )
+( adjacent(l1,l2) = 1 )
+( adjacent(l2,l1) = 1 )
+( adjacent(l2,l3) = 1 )
+( adjacent(l3,l2) = 1 )
+( adjacent(l3,l4) = 1 )
+( adjacent(l4,l3) = 1 )
+( adjacent(l4,l5) = 1 )
+( adjacent(l5,l4) = 1 )
+
+GOAL:
+( at(l5) = 1 )

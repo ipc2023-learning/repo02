@@ -1,0 +1,72 @@
+SPANNER-4
+
+OBJECTS:
+bob:man
+spanner1:spanner
+spanner2:spanner
+spanner3:spanner
+spanner4:spanner
+spanner5:spanner
+spanner6:spanner
+spanner7:spanner
+spanner8:spanner
+nut1:nut
+nut2:nut
+nut3:nut
+nut4:nut
+nut5:nut
+nut6:nut
+nut7:nut
+nut8:nut
+location1:location
+location2:location
+location3:location
+location4:location
+
+INIT:
+( atm(bob,location1) = 1 )
+( ats(spanner4,location4) = 1 )
+( ats(spanner5,location2) = 1 )
+( ats(spanner1,location3) = 1 )
+( ats(spanner2,location1) = 1 )
+( ats(spanner6,location2) = 1 )
+( ats(spanner8,location1) = 1 )
+( ats(spanner3,location1) = 1 )
+( ats(spanner7,location1) = 1 )
+( useable(spanner8) = 1 )
+( useable(spanner3) = 1 )
+( useable(spanner7) = 1 )
+( useable(spanner4) = 1 )
+( useable(spanner1) = 1 )
+( useable(spanner6) = 1 )
+( useable(spanner2) = 1 )
+( useable(spanner5) = 1 )
+( loose(nut1) = 1 )
+( loose(nut3) = 1 )
+( loose(nut5) = 1 )
+( loose(nut7) = 1 )
+( loose(nut6) = 1 )
+( loose(nut4) = 1 )
+( loose(nut2) = 1 )
+( loose(nut8) = 1 )
+( atn(nut6,location4) = 1 )
+( atn(nut8,location4) = 1 )
+( atn(nut2,location4) = 1 )
+( atn(nut5,location4) = 1 )
+( atn(nut7,location4) = 1 )
+( atn(nut4,location4) = 1 )
+( atn(nut1,location4) = 1 )
+( atn(nut3,location4) = 1 )
+( link(location1,location2) = 1 )
+( link(location2,location3) = 1 )
+( link(location3,location4) = 1 )
+
+GOAL:
+( tightened(nut1) = 1 )
+( tightened(nut2) = 1 )
+( tightened(nut3) = 1 )
+( tightened(nut4) = 1 )
+( tightened(nut5) = 1 )
+( tightened(nut6) = 1 )
+( tightened(nut7) = 1 )
+( tightened(nut8) = 1 )

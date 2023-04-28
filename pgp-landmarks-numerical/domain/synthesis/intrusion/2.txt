@@ -1,0 +1,12 @@
+INTRUSION-2
+
+OBJECTS:
+h1:host
+h2:host
+
+INIT:
+( dummy() = 1 )
+
+GOAL:
+( data-stolen-from(h1) = 1 )
+( data-stolen-from(h2) = 1 )

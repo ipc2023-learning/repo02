@@ -1,0 +1,13 @@
+TRIANGULAR-SUM-7
+
+OBJECTS:
+p0:object
+p1:object
+
+INIT:
+( vector(p0) = 0 )
+( vector(p1) = 7 )
+
+GOAL:
+( vector(p0) = 28 )
+( vector(p1) = 0 )

@@ -1,0 +1,19 @@
+CORRIDOR-STRIPS
+
+STATE DESCRIPTOR:
+location:var_type
+at(location):pred_type
+goal-at(location):pred_type
+adjacent(location,location):pred_type
+ptr-loc1:location
+ptr-loc2:location
+
+ACTION: move(from:location,to:location)
+TYPE: memory
+PRECONDITIONS:
+( at(from) = 1 )
+( at(to) = 0 )
+( adjacent(from,to) = 1 )
+EFFECTS:
+( at(from) = 0 )
+( at(to) = 1 )

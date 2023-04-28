@@ -1,0 +1,21 @@
+CORRIDOR
+
+STATE DESCRIPTOR:
+object:var_type
+vector(object):pred_type
+i:object
+j:object
+
+ACTION: vector-right(x:object)
+TYPE: memory
+PRECONDITIONS:
+( vector(x) + 1 )
+EFFECTS:
+( vector(x) += 1 )
+
+ACTION: vector-left(x:object)
+TYPE: memory
+PRECONDITIONS:
+( vector(x) - 1 )
+EFFECTS:
+( vector(x) -= 1 )

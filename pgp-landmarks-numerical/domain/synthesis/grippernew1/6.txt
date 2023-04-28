@@ -1,0 +1,29 @@
+GRIPPER-2
+
+OBJECTS:
+ball1:ball
+ball2:ball
+left:gripper
+right:gripper
+rooma:room
+roomb:room
+roomc:room
+
+INIT:
+( at-robby(rooma) = 1 )
+( at(ball1,rooma) = 1 )
+( at(ball2,rooma) = 1 )
+( at(ball1,roomb) = 0 )
+( at(ball2,roomb) = 0 )
+( at(ball1,roomc) = 0 )
+( at(ball2,roomc) = 0 )
+( free(left) = 1 )
+( free(right) = 1 )
+
+GOAL:
+( at(ball1,rooma) = 0 )
+( at(ball2,rooma) = 0 )
+( at(ball1,roomb) = 0 )
+( at(ball2,roomb) = 0 )
+( at(ball1,roomc) = 1 )
+( at(ball2,roomc) = 1 )

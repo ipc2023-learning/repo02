@@ -1,0 +1,22 @@
+BLOCKS-3
+
+OBJECTS:
+b1:object
+b2:object
+b3:object
+b4:object
+
+INIT:
+( handempty() = 1 )
+( clear(b4) = 1 )
+( clear(b2) = 1 )
+( on(b3,b1) = 1 )
+( on(b4,b3) = 1 )
+( ontable(b2) = 1 )
+( ontable(b1) = 1 )
+
+GOAL:
+( ontable(b1) = 1 )
+( ontable(b2) = 1 )
+( ontable(b3) = 1 )
+( ontable(b4) = 1 )

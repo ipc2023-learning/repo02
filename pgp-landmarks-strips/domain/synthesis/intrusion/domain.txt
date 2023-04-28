@@ -1,0 +1,81 @@
+INTRUSION
+
+STATE DESCRIPTOR:
+host:var_type
+recon-performed(host):pred_type
+broke-into(host):pred_type
+deleted-logs(host):pred_type
+modified-files(host):pred_type
+access-obtained(host):pred_type
+root-access-obtained(host):pred_type
+files-downloaded(host):pred_type
+information-gathered(host):pred_type
+vandalized(host):pred_type
+data-stolen-from(host):pred_type
+dummy():pred_type
+ptr-host1:host
+
+ACTION: recon(h:host)
+TYPE: memory
+PRECONDITIONS:
+( dummy() = 1 )
+EFFECTS:
+( recon-performed(h) = 1 )
+
+ACTION: information-gathering(h:host)
+TYPE: memory
+PRECONDITIONS:
+( recon-performed(h) = 1 )
+EFFECTS:
+( information-gathered(h) = 1 )
+
+ACTION: break-into(h:host)
+TYPE: memory
+PRECONDITIONS:
+( recon-performed(h) = 1 )
+EFFECTS:
+( access-obtained(h) = 1 )
+
+ACTION: modify-files(h:host)
+TYPE: memory
+PRECONDITIONS:
+( access-obtained(h) = 1 )
+EFFECTS:
+( modified-files(h) = 1 )
+
+ACTION: clean(h:host)
+TYPE: memory
+PRECONDITIONS:
+( access-obtained(h) = 1 )
+EFFECTS:
+( deleted-logs(h) = 1 )
+
+ACTION: vandalize(h:host)
+TYPE: memory
+PRECONDITIONS:
+( modified-files(h) = 1 )
+( deleted-logs(h) = 1 )
+EFFECTS:
+( vandalized(h) = 1 )
+
+ACTION: gain-root(h:host)
+TYPE: memory
+PRECONDITIONS:
+( access-obtained(h) = 1 )
+EFFECTS:
+( root-access-obtained(h) = 1 )
+
+ACTION: download-files(h:host)
+TYPE: memory
+PRECONDITIONS:
+( root-access-obtained(h) = 1 )
+EFFECTS:
+( files-downloaded(h) = 1 )
+
+ACTION: steal-data(h:host)
+TYPE: memory
+PRECONDITIONS:
+( files-downloaded(h) = 1 )
+( deleted-logs(h) = 1 )
+EFFECTS:
+( data-stolen-from(h) = 1 )

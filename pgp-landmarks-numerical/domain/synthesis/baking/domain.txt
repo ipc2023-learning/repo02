@@ -1,0 +1,99 @@
+BAKING
+
+STATE DESCRIPTOR:
+egg:var_type
+flour:var_type
+cake:var_type
+pan:var_type
+oven:var_type
+soap:var_type
+panhasegg(pan):pred_type
+panhasflour(pan):pred_type
+panisclean(pan):pred_type
+paninoven(pan):pred_type
+inoven(pan,oven):pred_type
+ovenisfull(oven):pred_type
+ismixed(pan):pred_type
+baked(cake):pred_type
+flourconsumed(flour):pred_type
+eggconsumed(egg):pred_type
+soapconsumed(soap):pred_type
+ptr-egg1:egg
+ptr-flour1:flour
+ptr-cake1:cake
+ptr-pan1:pan
+ptr-oven1:oven
+ptr-soap1:soap
+
+ACTION: putegginpan(e:egg,p:pan)
+TYPE: memory
+PRECONDITIONS:
+( eggconsumed(e) = 0 )
+( panhasegg(p) = 0 )
+( ismixed(p) = 0 )
+( panisclean(p) = 1 )
+( paninoven(p) = 0 )
+EFFECTS:
+( eggconsumed(e) = 1 )
+( panhasegg(p) = 1 )
+
+ACTION: putflourinpan(f:flour,p:pan)
+TYPE: memory
+PRECONDITIONS:
+( flourconsumed(f) = 0 )
+( panhasflour(p) = 0 )
+( ismixed(p) = 0 )
+( panisclean(p) = 1 )
+( paninoven(p) = 0 )
+EFFECTS:
+( flourconsumed(f) = 1 )
+( panhasflour(p) = 1 )
+
+ACTION: mix(e:egg,f:flour,p:pan)
+TYPE: memory
+PRECONDITIONS:
+( panhasflour(p) = 1 )
+( panhasegg(p) = 1 )
+( paninoven(p) = 0 )
+EFFECTS:
+( ismixed(p) = 1 )
+( panhasflour(p) = 0 )
+( panhasegg(p) = 0 )
+
+ACTION: putpaninoven(p:pan,o:oven)
+TYPE: memory
+PRECONDITIONS:
+( ovenisfull(o) = 0 )
+( paninoven(p) = 0 )
+EFFECTS:
+( ovenisfull(o) = 1 )
+( inoven(p,o) = 1 )
+( paninoven(p) = 1 )
+
+ACTION: removepanfromoven(p:pan,o:oven)
+TYPE: memory
+PRECONDITIONS:
+( inoven(p,o) = 1 )
+EFFECTS:
+( ovenisfull(o) = 0 )
+( inoven(p,o) = 0 )
+( paninoven(p) = 0 )
+
+ACTION: bakecake(o:oven,p:pan,c:cake)
+TYPE: memory
+PRECONDITIONS:
+( ismixed(p) = 1 )
+( inoven(p,o) = 1 )
+EFFECTS:
+( ismixed(p) = 0 )
+( panisclean(p) = 0 )
+( baked(c) = 1 )
+
+ACTION: cleanpan(p:pan,s:soap)
+TYPE: memory
+PRECONDITIONS:
+( soapconsumed(s) = 0 )
+( paninoven(p) = 0 )
+EFFECTS:
+( panisclean(p) = 1 )
+( soapconsumed(s) = 1 )

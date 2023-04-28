@@ -1,0 +1,10 @@
+INTRUSION-1
+
+OBJECTS:
+h1:host
+
+INIT:
+( dummy() = 1 )
+
+GOAL:
+( data-stolen-from(h1) = 1 )
