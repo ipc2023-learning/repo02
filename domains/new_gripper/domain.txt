@@ -1,0 +1,47 @@
+gripper-strips
+
+STATE DESCRIPTOR:
+room:var_type
+gripper:var_type
+ball:var_type
+at-robby(room):pred_type
+at(ball,room):pred_type
+free(gripper):pred_type
+carry(ball,gripper):pred_type
+ptr-object1:object
+ptr-room1:room
+ptr-room2:room
+ptr-room3:room
+ptr-gripper1:gripper
+ptr-gripper2:gripper
+ptr-ball1:ball
+ptr-ball2:ball
+
+ACTION: move(from:room,to:room)
+TYPE: memory
+PRECONDITIONS:
+( at-robby(from) = 1 )
+EFFECTS:
+( at-robby(to) = 1 )
+( at-robby(from) = 0 )
+
+ACTION: pick(obj:ball,room:room,gripper:gripper)
+TYPE: memory
+PRECONDITIONS:
+( at(obj,room) = 1 )
+( at-robby(room) = 1 )
+( free(gripper) = 1 )
+EFFECTS:
+( carry(obj,gripper) = 1 )
+( at(obj,room) = 0 )
+( free(gripper) = 0 )
+
+ACTION: drop(obj:ball,room:room,gripper:gripper)
+TYPE: memory
+PRECONDITIONS:
+( carry(obj,gripper) = 1 )
+( at-robby(room) = 1 )
+EFFECTS:
+( at(obj,room) = 1 )
+( free(gripper) = 1 )
+( carry(obj,gripper) = 0 )
