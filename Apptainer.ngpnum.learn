@@ -42,9 +42,9 @@ Stage: run
 	total=${#PROBLEM_FILES[@]}
 	for (( i=1; i<=(($total)); i++ ))
 	do
-		echo "Domain=${DOMAIN_FILE} Problem=${PROBLEM_FILES[i-1]}"
-		python3 PDDLtranslator.py "${DOMAIN_FILE}" "${PROBLEM_FILES[i-1]}"
-		mv problem.txt ${i}.txt
+        echo "Domain=${DOMAIN_FILE} Problem=${PROBLEM_FILES[i-1]}"
+        python3 /PDDLtranslator.py "${DOMAIN_FILE}" "${PROBLEM_FILES[i-1]}"
+        mv ./problem.txt ./${i}.txt
 	done
 
 	/main_numerical.bin PGP 15 2 "" $DOMAIN_KNOWLEDGE_FILE h5 h1

@@ -40,10 +40,10 @@ Stage: run
     PLAN_FILE="$4"
 
 	echo "DK=$DOMAIN_KNOWLEDGE_FILE Domain=$DOMAIN_FILE Problem=$PROBLEM_FILE Plan File=$PLAN_FILE"
-	python3 PDDLtranslator.py "$DOMAIN_FILE" "$PROBLEM_FILE"
-	mv problem.txt 1.txt
+    python3 /PDDLtranslator.py "$DOMAIN_FILE" "$PROBLEM_FILE"
+    mv ./problem.txt ./1.txt
     /validator_strips.bin "$DOMAIN_KNOWLEDGE_FILE" ""
-    mv plan.1 "$PLAN_FILE"
+    mv ./plan.1 "$PLAN_FILE"
 
 %labels
 Name        Progressive Generalized Planner
