@@ -144,9 +144,9 @@ int main(  int argc, const char* argv[] ){
     if( preprocess_landmarks ) {
         for (int id = 0; id < gpp->getNumInstances(); id++) {
             landmark_graphs.push_back(new LandmarkGraph(dom, gpp->getInstance(id)));
-            ofstream ofs_prog(outfile + "-" + to_string(id) + ".lg" );
-            ofs_prog << landmark_graphs[id]->toString() << endl;
-            ofs_prog.close();
+//            ofstream ofs_prog(outfile + "-" + to_string(id) + ".lg" );
+//            ofs_prog << landmark_graphs[id]->toString() << endl;
+//            ofs_prog.close();
         }
     }
 
